@@ -1,20 +1,38 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
+<ion-header class="ion-no-border">
+  <ion-toolbar class="bg-gray">
+    <ion-buttons slot="start">
+      <ion-button (click)="clearNotifications()">
+        <ion-icon slot="icon-only" name="trash" color="secondary"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-item class="bg-gray">
+      <ion-label class="user-text bold align-right" color="secondary" slot="end">Antonio Barco</ion-label>
+      <ion-avatar slot="end">
+        <img src="/assets/img/mameshibawallpaper.png" />
+      </ion-avatar>
+    </ion-item>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+  <ion-list>
+    <ion-item>
+      <ion-icon slot="start" color="secondary" name="person"></ion-icon>
+      <ion-label>
+        <h2>User ID</h2>
+        <p>{{pushService.userId}}</p>
+      </ion-label>
+    </ion-item>
+    <ion-list-header>
+      <ion-label><h1>All Notifications</h1></ion-label>
+    </ion-list-header>
+    <ion-item *ngFor="let notification of messages;">
+      <ion-icon slot="start" color="secondary" name="notifications"></ion-icon>
+      <ion-label>
+        <h2>{{notification.title}}</h2>
+        <p>{{notification.body}}</p>
+        <p>{{notification.additionalData | json }}</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
 </ion-content>

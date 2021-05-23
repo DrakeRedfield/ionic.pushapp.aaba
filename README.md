@@ -1,6 +1,6 @@
 # PushApp
 
-En esta aplicación podrás recibir notificaciones push en tu dispositivo móvil, usando One Signal, se podrá almacenar las notificaciones recibidas en el almacenamiento local y visualizarlas en la aplicación un historial de las notificaciones.
+En esta aplicación podrás recibir notificaciones push en tu dispositivo móvil, usando One Signal, se podrá almacenar las notificaciones recibidas en el almacenamiento local y visualizarlas en la aplicación.
 
 # Instalación
 
