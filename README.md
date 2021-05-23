@@ -4,6 +4,8 @@ En esta aplicación podrás recibir notificaciones push en tu dispositivo móvil
 
 # Instalación
 
+<img width="260px" align="right" hspace="10" vspace="5" src="https://user-images.githubusercontent.com/83781782/119276967-9e6eda00-bbe2-11eb-93a1-8d182d52e9d5.png">
+
 #### Firebase Project
 
 Es necesario tener un proyecto en Firebase, puedes crear uno visitando [Firebase](https://firebase.google.com/)
