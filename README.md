@@ -4,6 +4,10 @@ En esta aplicación podrás recibir notificaciones push en tu dispositivo móvil
 
 # Instalación
 
+#### Firebase Project
+
+Es necesario tener un proyecto en Firebase, puedes crear uno visitando [Firebase](https://firebase.google.com/)
+
 #### Api Key One Signal
 
 Puedes solicitar una key en [One Signal](https://app.onesignal.com)
